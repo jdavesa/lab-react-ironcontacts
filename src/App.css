@@ -1,38 +1,97 @@
 .App {
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,0.5480567226890756) 0%, rgba(255,255,255,1) 50%);
+  border-bottom: 1px solid rgb(236, 236, 236);
+  height: 200px;
+  z-index: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar h1{
+  font-size: 6rem;
+  color: orange;
+  font-weight: bold;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar button{
+  background-color: orange;
+  border-radius: 25px;
   color: white;
+  border: none;
+  margin: 10px;
+  height: 50px;
+  width: 200px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+
+.navbar button:hover{
+  background-color:rgba(255, 255, 255, 0.541);
+  color: orange;
+  border: 1px solid orange;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.contactList{
+  position: absolute;
+  top: 200px;
+  right: 30%;
+  left: 30%;
+
 }
+
+.contactCard{
+  border: 1px solid orange;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.158);
+  border-radius: 30px;
+  margin-top: 20px;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px
+ 
+  
+  
+}
+
+.contactCard div img{
+  height:250px;
+  width: auto;
+  border-radius: 10%;
+}
+
+.contactCard button{
+  background-color: orange;
+  border-radius: 25px;
+  color: white;
+  border: none;
+  margin: 10px;
+  height: 50px;
+  width: 200px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.contactCard button:hover{
+  background-color:rgba(255, 255, 255, 0.541);
+  color: orange;
+  border: 1px solid orange;
+}
+
+
